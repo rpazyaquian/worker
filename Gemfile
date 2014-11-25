@@ -33,8 +33,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+
+  gem "pry-rails"
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'pry-byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0.0.beta4'
@@ -43,4 +45,10 @@ group :development, :test do
   gem 'spring'
 end
 
-gem "resque", "~> 2.0.0.pre.1", github: "resque/resque"
+gem "resque"
+
+gem "resque-scheduler"
+
+gem "mailcatcher"
+
+gem 'dotenv-rails'
