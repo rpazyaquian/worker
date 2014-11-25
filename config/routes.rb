@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
   get 'sync' => 'sync#index'
+  post 'sync' => 'sync#create'
   get 'async' => 'async#index'
+  post 'async' => 'async#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
