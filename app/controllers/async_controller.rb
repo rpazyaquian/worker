@@ -1,0 +1,2 @@
+class AsyncController < ApplicationController
+end
